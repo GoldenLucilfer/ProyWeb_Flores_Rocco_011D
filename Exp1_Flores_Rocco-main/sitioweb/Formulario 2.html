@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UPLOAD BEAT</title>
+    <link rel="stylesheet" href="css/Form Style.css"/>
+    <link rel="stylesheet" href="css/Style1.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    
+    
+    <!--CABECERA-->
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-sm bg-light, menu">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#opciones" style="margin-left: 15px;">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a href="#" class="navbar-brand">
+                <img src="img/logo.jpg" width="30px" height="30px" style="margin-left: 15px;">
+            </a>
+            <!-- Links -->  
+            <div class="collapse navbar-collapse" id="opciones">
+                <ul class="navbar-nav" style="margin-left: 15px;">
+                    <li class="nav-item">
+                        <a class="nav-link" href="ventana_inicio.html" style="color: rgb(0, 0, 0);">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="vista_tracklist.html" style="color: rgb(0, 0, 0);">Tracklist</a>
+                    </li> 
+                    <li class="nav-item">
+                        <a class="nav-link" href="ventana_info.html" style="color: rgb(0, 0, 0);">Acerca de nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Formulario 2.html" style="color: rgb(0, 0, 0); margin-left: 1100px;">Upload Beat</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Formulario 1.html" style="color: rgb(0, 0, 0);">Crear Cuenta</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!--Formulario-->
+    <div class="container">
+        <h2 class="title" style="color: aliceblue;">UPLOAD Beats</h2>
+        <form action="#" name="registration" id="form">
+            <label for="firstname">Nombre del track</label>
+            <input type="text" name="firstname" id="firstname" >
+            <span class="error" id="error-firstname"></span>
+
+            <label for="lastname">Descripción</label>
+            <input type="text" name="lastname" id="lastname" >
+            <span class="error" id="error-lastname"></span>
+
+            <label for="collabname">Nombre Colaboración</label>   
+            <input type="text" name="collabname" id="collabname">
+            <span class="error" id="error-collabname"></span>
+
+            <label for="beatfile">Suba su BEAT</label>
+            <input type="file" id="beatfile" name="beatfile" accept="audio/*">
+            <span class="error" id="error-beatfile"></span>
+            
+            <button type="submit">Subir Beat</button>
+            <p class="warnings" id="warnings"></p>
+        </form>
+    </div>
+    <div style="position: absolute; padding-top: 35%;">
+        <p style="color: aliceblue;">@copyright Derechos reservados</p>
+    </div>
+    <script src="js/funciones 2.js"></script>
+</body>
+</html>
